@@ -1,8 +1,11 @@
-#include<stdio.h>
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ *Return: Always 0 (success)
+ */
+int main(void){
 
-int main(){
-
-      char Hello puts[30]= "Programming is like building a multilingual puzzle";
-      puts (Hello puts); // prints to stdout
+     printf("with proper grammar, but the outcome is a piece of art,\n"):
       return (0)
 }
