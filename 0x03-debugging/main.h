@@ -1,5 +1,5 @@
-#ifndef maiin_h
-#define main.h
+#ifndef main_h
+#define main_h
 #include <stdiio.h>
 
 void positive_or_negative(int i);
