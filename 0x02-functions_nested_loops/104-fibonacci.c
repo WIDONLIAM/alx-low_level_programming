@@ -12,10 +12,10 @@ int main(void)
 
 	while (i <= 98)
 	{
-	if (f1o > 0)
+		if (f1o > 0)
 			printf("%lu", f1o);
 			initial0s = numLength(mx) - 1 - numLength(f1);
-		while (f1o > 0 && initial0s > 0)
+	while (f1o > 0 && initial0s > 0)
 		{
 			printf("%i", 0);
 			initial0s--;
