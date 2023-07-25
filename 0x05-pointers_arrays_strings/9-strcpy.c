@@ -7,7 +7,7 @@
  * Return: string
  */
 
-char *_ strcpy(char *dest, char *src
+char *_ strcpy(char *dest, char *src)
 {
 	int l = 0; int x = 0,
 
