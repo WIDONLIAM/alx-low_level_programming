@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * 'char'_stropy - a function that copies the string pointed to by the src
+ * char *_stropy - a function that copies the string pointed to by the src
  * @dest: copy to
  * @src: copy from
  * Return: string
@@ -21,7 +21,7 @@ char *_ strcpy(char *dest, char *src)
 			dest[x] = src[x];
 		}
 
-			est[l] = '\0';
+			dest[l] = '\0';
 
 			return (dest);
 }
