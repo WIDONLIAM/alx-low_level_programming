@@ -5,18 +5,20 @@
  * @n: pointer
  *
  * Return: n
+ *
  */
 
 char *string_toupper(char *n)
 {
-	int i = 0;
+	int i;
 
-		while (n[i] != '\0')
-		{
-			if (n[i] >= 'a' && n[i] <= 'z')
-				n[i] = n[i] - 32;
-				i++;
-		}
+	i = 0;
 
-			return (n);
+	while (n[i] != '\0')
+	{
+		if (n[i] >= 'a' && n[i] <= 'z')
+
+			n[i] = n[i] - 32;
+			i++;
+	}
 }
