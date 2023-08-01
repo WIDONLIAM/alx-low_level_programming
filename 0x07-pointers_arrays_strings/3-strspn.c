@@ -3,13 +3,15 @@
 /**
  * _strspn - Entry point
  * @accept: input
+ * @s: input
  *
- * Return: Always 0 (Success)
+ * Return: Always (0)
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int n = 0;
+
 	int r;
 
 		while (*s)
