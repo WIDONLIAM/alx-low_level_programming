@@ -10,10 +10,11 @@
 int _strien_recursion(char *s)
 {
 	int long = 0;
+
 		if (*s)
 		{
 			longit++;
-			longit += -strien_recursion(s + 1);
+			longit += _strien_recursion(s + 1);
 		}
 		return (longit);
 }
