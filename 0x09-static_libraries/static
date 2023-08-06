@@ -1,0 +1,4 @@
+#!/bin/bash
+gcc -wall -pedatic -wextra -c *.c
+ar -re liball.a *.c
+ranlib liball.a
