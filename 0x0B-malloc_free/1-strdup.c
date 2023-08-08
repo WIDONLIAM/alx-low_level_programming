@@ -19,17 +19,17 @@ char *_strdup(char *str)
 
 		if (str == NULL)
 
-			return (NULL);
+		return (NULL);
 
 		while (str[i] != '\0')
 			i++;
 
 		if (aaa == NULL)
 
-			return (NULL);
+		return (NULL);
 
 		for (r = 0; str[r]; r++)
 			aaa[r] = str[r];
 
-			return (aaa);
+		return (aaa);
 }
