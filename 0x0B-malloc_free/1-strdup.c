@@ -1,6 +1,6 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
  * _strdup - Will be duplicating in new memory space location
@@ -23,7 +23,6 @@ char *_strdup(char *str)
 
 		while (str[i] != '\0')
 			i++;
-
 
 		if (aaa == NULL)
 
