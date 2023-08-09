@@ -5,7 +5,7 @@
  * argstostr _ Will be our  main entry
  * @ac: Is the int input
  * @av: Is the double pointer array
- * Description: Concatenation of all the arguments of our program.
+ * Description: Concatenate all the arguments of your program
  *
  * Return: (0)
  */
