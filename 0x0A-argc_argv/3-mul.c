@@ -16,7 +16,7 @@ int _atoi(char *s)
 	len = 0;
 	i = 0;
 	d = 0;
-	f = 0; 
+	f = 0;
 	n = 0;
 
 
