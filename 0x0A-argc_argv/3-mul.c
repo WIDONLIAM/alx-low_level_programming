@@ -58,12 +58,12 @@ int _atoi(char *s)
  * @argc: Is the number of arguments
  * @argv: Is the array of arguments
  *
- * Return: (0), 1 (Error)
+ * Return: (0), (1) (Error)
  */
 
 int main(int argc, char *argv[])
 {
-	int num1, num2, result;
+	int result, num1, num2;
 
 		if (argc < 3 || argc > 3)
 		{
