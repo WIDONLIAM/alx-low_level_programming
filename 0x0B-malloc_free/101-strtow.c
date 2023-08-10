@@ -2,37 +2,36 @@
 #include <stdlib.h>
 
 /**
- * count_word - Will be helping the function such the it  counts the number of words contained in a string
- * @s: Is the string to evaluate
+ * count_word - Count the number of words in a string
+ * @s: String to evaluate
  *
  * Return: number of words
  */
 
 int count_word(char *s)
 {
-	int flag, c, w;
+	int flag = 0;
+	int w = 0;
+	int c;
 
-	flag = 0;
-	w = 0;
-	for (c = 0; s[c] != '\0'; c++)
-	{
-		if (s[c] == ' ')
-			flag = 0;
-		else if (flag == 0)
+		for (c = 0; s[c] != '\0'; c++)
 		{
-			flag = 1;
-			w++;
+			if (s[c] == ' ')
+				flag = 0;
+
+			else if (flag == 0)
+			{
+				flag = 1;
+				w++;
+			}
 		}
-	}
-
-	return (w);
+		return (w);
 }
-
 /**
- * **strtow - Will be spliting a string into words
- * @str: Is the string to split
+ * **strtow - Splits a string into words
+ * @str: String to split
  *
- * Return: The pointer to an array of (strings) or NULL (Error)
+ * Return: Pointer to an array of (strings) or NULL (Error)
  */
 
 char **strtow(char *str)
@@ -40,37 +39,41 @@ char **strtow(char *str)
 	char **matrix, *tmp;
 	int i, words, len = 0, c = 0, k = 0, start, end;
 
-	while (*(str + len))
-		len++;
-	words = count_word(str);
-	if (words == 0)
+		while (*(str + len))
+			len++;
+			words = count_word(str);
+
+		if (words == 0)
 		return (NULL);
 
-	matrix = (char **) malloc(sizeof(char *) * (words + 1));
-	if (matrix == NULL)
+			matrix = (char **) malloc(sizeof(char *) * (words + 1));
+
+		if (matrix == NULL)
 		return (NULL);
 
-	for (i = 0; i <= len; i++)
-	{
-		if (str[i] == ' ' || str[i] == '\0')
+		for (i = 0; i <= len; i++)
 		{
-			if (c)
+			if (str[i] == ' ' || str[i] == '\0')
 			{
-				end = i;
-				tmp = (char *) malloc(sizeof(char) * (c + 1));
-				if (tmp == NULL)
+				if (c)
+				{
+					end = i;
+					tmp = (char *) malloc(sizeof(char) * (c + 1));
+
+					if (tmp == NULL)
 					return (NULL);
-				while (start < end)
+
+					while (start < end)
 					*tmp++ = str[start++];
-				*tmp = '\0';
-				matrix[k] = tmp - c;
-				k++;
-				c = 0;
+					*tmp = '\0';
+					matrix[k] = tmp - c;
+					k++;
+					c = 0;
+				}
 			}
+			else if (c++ == 0)
+				start = i;
 		}
-		else if (c++ == 0)
-			start = i;
-	}
-	matrix[k] = NULL;
-	return (matrix);
+		matrix[k] = NULL;
+		return (matrix);
 }
