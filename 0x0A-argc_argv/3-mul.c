@@ -58,7 +58,7 @@ int _atoi(char *s)
  * @argc: Is the number of arguments
  * @argv: Is the array of arguments
  *
- * Return: (0), (1) (Error)
+ * Return: (0), 1 (Error)
  */
 
 int main(int argc, char *argv[])
