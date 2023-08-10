@@ -10,9 +10,10 @@
 
 int count_word(char *s)
 {
-	int flag = 0;
-	int w = 0;
-	int c;
+	int flag, c, w;
+
+		w = 0;
+		flag = 0;
 
 		for (c = 0; s[c] != '\0'; c++)
 		{
@@ -27,6 +28,7 @@ int count_word(char *s)
 		}
 		return (w);
 }
+
 /**
  * **strtow - Splits a string into words
  * @str: String to split
