@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
  * _atoi - Will be converting a string into an integer
