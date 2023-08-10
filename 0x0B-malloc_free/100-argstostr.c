@@ -6,7 +6,6 @@
  * @ac: Is the int input
  * @av: Is the double pointer array
  * Description: Concatenate all the arguments of your program
- *
  * Return: (0)
  */
 
